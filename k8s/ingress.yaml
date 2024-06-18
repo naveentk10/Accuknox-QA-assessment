@@ -12,7 +12,7 @@ spec:
     secretName: wisecow-tls
   rules:
   - host: your-domain.com
-    http:
+    https:
       paths:
       - path: /
         pathType: Prefix
@@ -20,4 +20,4 @@ spec:
           service:
             name: wisecow-service
             port:
-              number: 80
+              number: 443
